@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html 5</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua
+         o tamnho do seu navegador</p>
+         <picture>
+             <source media="(max-width: 750px)" srcset="imagens/imagem.p.png" type="image/png">
+             <source media="(max-width: 1050px)" srcset="imagens/imagen.m.png" type="image/png">
+             <img src="imagens/imagem.g.png" alt="imagem flexivel">
+         </picture>
+
+        <h1>reprodizindo audio </h1>
+        <p>vamso aprender a reproduzir audio em html 5 </p>
+       <audio preload="metadata" autoplay controls>
+           <source src="midia/MUSICA ÉPICA-TRILHA SONORA - OTIMA PARA ABERTURA DE JOGOS - TRAILER - AÇÃO - DRAMA -CINEMATOGRÁFICO.mp3" type="audio/mpeg">
+           <source src="midia/MUSICA ÉPICA-TRILHA SONORA - OTIMA PARA ABERTURA DE JOGOS - TRAILER - AÇÃO - DRAMA -CINEMATOGRÁFICO.ogg" type="audio/ogg">
+           <source src="midia/MUSICA ÉPICA-TRILHA SONORA - OTIMA PARA ABERTURA DE JOGOS - TRAILER - AÇÃO - DRAMA -CINEMATOGRÁFICO.wav" type="audio/wav">
+       <p>infelizmente seuj navegador não consegue reproduzir audio clique aqui para baixar arquivo  mp3
+            <a href="midia/MUSICA ÉPICA-TRILHA SONORA - OTIMA PARA ABERTURA DE JOGOS - TRAILER - AÇÃO - DRAMA -CINEMATOGRÁFICO.mp3"></a></p>
+        </audio>
+</body>
+</html>

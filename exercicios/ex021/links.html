@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }        
+        a:visited {
+            color: rgb(0, 124, 21);
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::after {
+            content:  ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        a.especial::after {
+            content: ' [youtube]';
+            color: red;
+            font-weight: 100;
+            text-decoration: none;
+        }
+        a.especial::before {
+            content: ' ✎  ';
+            color: black;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>personalizando linkis</h1>
+    
+        <h2>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCZYzsWuv2z_Vvo4zdY3LasA" target="blank" class="especial">samurai hiroshi/ youtube</a></li>
+                <li><a href="https://www.instagram.com/hiroshi_yosh/" target="blank">hiroshi_yoshi/ instagran</a></li>
+                <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="blank">cursso em video/ youtube</a></li>
+            </ul>
+        </h2>
+    
+</body>
+</html>

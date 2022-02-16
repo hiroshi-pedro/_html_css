@@ -3,6 +3,7 @@
 
 :root {
     --font_1: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 * {
     margin: 0px;
@@ -47,7 +48,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: var(--font_3);
+    font-size: 3vw;
 } 
 
 
@@ -58,7 +59,7 @@ section.normal {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.418);
-    width: 400px;
+    display: inline-block;
 }
 
 section.imagem {

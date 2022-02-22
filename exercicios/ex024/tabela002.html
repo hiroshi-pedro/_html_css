@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
             width: 500px;
+            position: relative;
+        }
+
+        caption {
+            font-size: 18px;
+            background-color: aquamarine;
         }
 
         td, th {
@@ -20,14 +26,33 @@
             padding: 10px;
         }
 
+        tbody {
+            background-color: rgb(53, 58, 63);
+            color: aliceblue;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+            color: black;
+        }
+
         thead, tfoot {
             background-color: darkgray;
+            color: aliceblue;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(53, 58, 63) ;
         }
 
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+
+
     <!--
         anatomia para tabelas grandes
 
@@ -39,10 +64,13 @@
             tr, td, th
     -->
 
+
     <table>
+        <caption> população das unidades federativas </caption>
+
         <thead>
             <tr>
-                <th>estado</th> <th>população</th>
+                <th scope="col">estado</th> <th scope="col" >população</th>
             </tr>
         </thead>
         <tbody>
@@ -66,10 +94,12 @@
             </tr>
         </tbody>
         <tfoot>
-            <td>total de habitantes</td>
+            <th scope="row">total de habitantes</td>
             <td><strong>210.147.125</strong></td>
         </tfoot>
     </table>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime commodi minima voluptatem illo nihil error reprehenderit sapiente neque unde officia nam sunt consequuntur voluptas deleniti, rem cum in incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, debitis voluptas enim blanditiis quidem earum asperiores id ipsum, tempora, quisquam dolorum! Quasi sequi dolor impedit recusandae aspernatur est odit nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae eius, doloribus laboriosam reiciendis ex corrupti perferendis quia dolorem nesciunt aliquam quis qui nihil sed quibusdam sint perspiciatis, ullam inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem mollitia, ex sit eligendi aliquid accusamus quidem odit sunt velit harum laboriosam provident? Itaque ipsa ipsam autem sit quos, illo fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime laudantium eligendi sed rerum molestias, recusandae, hic doloribus laborum repudiandae modi voluptate illum animi nemo esse odit autem quidem tenetur totam!</p>
 
 </body>
 </html>

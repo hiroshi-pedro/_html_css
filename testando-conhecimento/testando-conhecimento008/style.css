@@ -118,7 +118,7 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
   
-  .escureser >  main > h1 {
+  main > h1 {
     color: var(--cor2);
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-size: 2em;
@@ -129,11 +129,16 @@
     text-shadow: 0px 5px 10px  rgb(255, 0, 0);
   }
 
-
-
-  div.escureser {
-      height: 92vh;
-      background-color: rgba(0, 0, 0, 0.411);
-      transition: 1s;
+  .container {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 92vw;
   }
+
+  .carrossel {
+    width: 720px;
+    height: 420px;
+  }
+
   

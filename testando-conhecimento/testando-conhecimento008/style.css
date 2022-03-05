@@ -129,16 +129,124 @@
     text-shadow: 0px 5px 10px  rgb(255, 0, 0);
   }
 
-  .container {
-    display: flex;
-    align-items: center;
-    width: 50vw;
-    height: 92vw;
+  #titulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
   }
-
-  .carrossel {
-    width: 720px;
-    height: 420px;
-  }
-
   
+  main,.row{
+      min-height: 90vh;
+  }
+
+  main {
+    width: 25vh;
+  }
+  
+  #dv1{
+    height: 80vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0%);
+  
+  }
+  
+  img{
+    max-width: 80%;
+    width: 80%;
+    height: 100%;
+    object-fit:cover;
+    position: relative;
+    z-index: 1;
+    transition: left 1.5s;
+  }
+  
+  #img1{
+    left: 10%;
+  }
+  
+  #img2{
+    left:90%;
+    top:-100%;
+    filter: blur(5px);
+  
+  }
+  #img3{
+    left:170%;
+    top:-200%;
+    filter: blur(5px);
+  
+  }
+  
+  #img4{
+    left:250%;
+    top:-300%;
+    filter: blur(5px);
+  }
+  
+  #esquerda{
+    width: 10%;
+    height: 20%;
+    position: relative;
+    top:-360%;
+    left:0%;
+    background-color: rgba(200,200,200,25%);
+  }
+  #esquerda:hover{
+    cursor: pointer;
+  }
+  
+  #direita{
+    width: 10%;
+    height: 20%;
+    position: relative;
+    top:-380%;
+    left:90%;
+    background-color: rgba(200,200,200,25%);
+  }
+  #direita:hover{
+    cursor: pointer;
+  }
+  
+  .icone{
+    width: 100%;
+      object-fit: scale-down;
+  }
+  
+  
+  #b1{
+      background-color: rgba(255,255,255,100%);
+  }
+  
+  .mostradores{
+    position: relative;
+    left: 0%;
+    top: -360%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+      z-index:5 !important;
+  }
+  
+  .mostrador{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 3vh;
+    background-color: rgba(255,255,255,50%);
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 1100px) and (orientation:portrait){
+    #dv1{
+    height: 40vh;
+    }
+      .mostrador{
+          width: 4vw;
+          height: 4vw;
+          border-radius: 3vw; }
+          }
+
+          img.carrossel {
+            width: 720px;
+            height: 480px;
+          }

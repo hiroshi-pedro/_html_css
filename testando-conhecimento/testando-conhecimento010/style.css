@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/* font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 0px;
+}
+
+.cabecalho-imagem {
+    width: 75px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #fff2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #fff2E7;
+}
+
+.secao-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.titulo-1 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #fff2E7;
+}
+
+.titulo-2 {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff2E7;
+}
+
+.botao-1 {
+    background-color: #ECD6C4;
+    width: 185px;
+    height: 60px;
+    box-shadow: 4px 5px 4px solid rgba(0, 0, 0, 0.575);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.secao-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.titulo-3 {
+    border-top: 0.4px solid #fff2E7;
+    padding-top: 48px;
+    margin-bottom: 16px;
+    color: #fff2E7;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+}
+
+.par-1 {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-family: 16px;
+    color: #fff2E7;
+}
+
+.roda-pe {
+    padding: 32px;
+    border-top: 0.4px solid #ECD6C4;
+}
+
+.img-roda-pe {
+    height: 48px;
+    display: block;
+    margin: 0px auto;
+}

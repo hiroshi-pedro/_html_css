@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#cabeca {
+    display: flex;
+    padding: 10px;
+    background-color: #344459;
+    background-position: center top;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#itens-cabeca {
+    display: flex;
+}
+
+img {
+    width: 200px;
+}

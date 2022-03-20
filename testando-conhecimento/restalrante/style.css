@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
   }
 
   body {
@@ -165,18 +166,11 @@
   100% { margin-left: -400%; }
 }
 
-/* apresentaçãoo */
-
-#titulo-apresentacao {
-  font-family: "japonesa";
-  text-align: center;
-  font-size: 50px;
-  color: #D94F30;
-  text-shadow: 3px 3px 3px black;
-  padding-bottom: 30px;
+.abc {
+  width: 500px;
 }
 
-.produtos {
-  display: flex;
+.qwe {
+  width: 1000px;
+  background-color: #1F2326;
 }
- 
